@@ -1,0 +1,364 @@
+* {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: auto;
+    color: #999;
+    background: linear-gradient(rgba(255, 255, 255, 0.302), rgba(255, 255, 255, 0.905)), url(./background.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+
+.hrh {
+    clear: both;
+    visibility: hidden;
+}
+
+.shine {
+    height: 20px;
+    width: 60%;
+    background-image: radial-gradient(farthest-side at 50% -50%,
+            hsla(0, 0%, 0%, 0.5),
+            hsla(0, 0%, 0%, 0));
+    position: relative;
+}
+
+.shine::before {
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg,
+            hsla(0, 0%, 0%, 0),
+            hsla(0, 0%, 0%, 0.75) 50%,
+            hsla(0, 0%, 0%, 0));
+}
+
+.tablaGastos {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: #434655 2px solid;
+    border-radius: 7px;
+    background-color:whitesmoke;
+}
+
+.tablaGastos tbody tr>td {
+    height: 50px;
+    padding-left: 3px;
+    font-size: 55px;
+    font-weight: 500;
+    color: #434655;
+    
+}
+
+.button-80 {
+    background-color: whitesmoke;
+    background-size: auto;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: .125rem;
+    box-sizing: border-box;
+    color: #212121;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    height: 60px;
+    padding: .400rem .900rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-80:not(:disabled):hover {
+    transform: scale(1.05);
+}
+
+.button-80:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+}
+
+.button-80:focus {
+    outline: 0 solid transparent;
+}
+
+.button-80:focus:before {
+    content: "";
+    left: calc(-1*.375rem);
+    pointer-events: none;
+    position: absolute;
+    top: calc(-1*.375rem);
+    transition: border-radius;
+    user-select: none;
+}
+
+.button-80:focus:not(:focus-visible) {
+    outline: 0 solid transparent;
+}
+
+.button-80:focus:not(:focus-visible):before {
+    border-width: 0;
+}
+
+.button-80:not(:disabled):active {
+    transform: translateY(.125rem);
+}
+
+.subtitulo {
+    color: #434655;
+    text-align: right;
+    font-size: 3rem;
+    margin-top: auto;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+.cuadrado-1 {
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #555;
+    background: #4649eb;
+}
+
+.cuadrado-2 {
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #555;
+    background: #f59416;
+}
+
+.cuadrado-3 {
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #555;
+    background: #949494;
+}
+
+.cuadrado-4 {
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #555;
+    background: #fff020;
+}
+
+.cuadrado-5 {
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #555;
+    background: #FF6699;
+}
+
+
+.cuadrado-6 {
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #555;
+    background: #39973e;
+}
+
+
+#contenidoGP {
+    display: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+#contenidoAP {
+    display: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#contenidoEE {
+    display: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#contenidoM {
+    display: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#contenidoTD {
+    display: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#contenidoGV {
+    display: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.g55{
+    position: absolute;
+    margin-left: 370px;
+    margin-top: 215px;
+    z-index: 2;
+    color: black;
+    font-size: 38px;
+}
+.g5 {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 350px;
+    z-index: 2;
+    color: black;
+}
+.g11 {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 310px;
+    z-index: 2;
+    color: black;
+}
+.g13 {
+    position: absolute;
+    margin-left: 95px;
+    margin-top: 230px;
+    z-index: 2;
+    color: black;
+}
+.g9 {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 160px;
+    z-index: 2;
+    color: black;
+}
+.g7 {
+    position: absolute;
+    margin-left: 285px;
+    margin-top: 160px;
+    z-index: 2;
+    color: black;
+}
+
+#divimg{
+    position: relative;
+    margin-left: 0;
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+}

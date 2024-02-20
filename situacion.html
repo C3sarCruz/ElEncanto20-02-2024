@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="SituacionEstado.js" type="text/javascript"></script>
+    <link href="situacion.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Estado de Posisión Financiera</title>
+</head>
+<div class="header">
+    <a href="inicio.html"><img src="./El_Encanto_Logo.png" style="width: 150px;"></a>
+    <div class="parrafo">
+        <h3>
+            Estado de Situación Financiera
+        </h3>
+        <h4>
+            Al 31 de Diciembre 2023
+        </h4>
+    </div>
+</div>
+
+<body>
+    <!-- <table class="table-ap">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="columnA">
+                        <table class="table-th">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h2>
+                                            Activo
+                                        </h2>
+                                    </td>
+                                    <td>
+                                        <h2>
+                                            2023
+                                        </h2>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <div class="columnP">
+                        <table class="table-th">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h2>
+                                            Pasivo
+                                        </h2>
+                                    </td>
+                                    <td>
+                                        <h2>
+                                            2023
+                                        </h2>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <div class="contenido">
+        <!--****************************  CONTENIDO AC  *****************-->
+
+        <div id="contenidoAC">
+            <div class="contenidoAC-Dis">
+                <div class="contenido-back"></div>
+                <div id="cerrarAC" style="text-align: left; margin-bottom: 30px;" class="cerrar"><a
+                        href="javascript:cerrarAC()">CERRAR</a>
+                </div>
+                <table style="border-collapse: collapse; width: 100%;" class="tablaAC">
+                    <tbody>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                ACTIVO CIRCULANTE
+                            </td>
+                            <td style="width: 30%; text-align: right; text-decoration: underline;">
+                                2023
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                EFECTIVO Y EQUIVALENTES DE EFECTIVO
+                            </td>
+                            <td style="width: 30%;text-align:right ">
+                                308,826
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                INVERSIONES
+                            </td>
+                            <td style="width: 30%; text-align: right; ">
+                                349,565
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                CONDÓMINOS
+                            </td>
+                            <td style="width: 30%; text-align: right; color: #00B0F0;">
+                                351,837
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                DEUDORES DIVERSOS
+                            </td>
+                            <td style="width: 30%; text-align: right; ">
+                                18,820
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                IMPUESTOS POR ACREDITAR
+                            </td>
+                            <td style="width: 30%; text-align: right; ">
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                ANTICIPOS A PROVEEDORES
+                            </td>
+                            <td style="width: 30%; text-align: right; ">
+                                5,102
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--****************************  FIN CONTENIDO AC  *****************-->
+
+        <!--****************************  CONTENIDO PC  *****************-->
+        <div id="contenidoPC">
+            <div class="contenidoPC-Dis">
+                <div class="contenido-back"></div>
+                <div id="cerrarPC" style="text-align: left; margin-bottom: 30px;" class="cerrar"><a
+                        href="javascript:cerrarPC()">CERRAR</a>
+                </div>
+                <br>
+                <table style="border-collapse: collapse; width: 100%;;" class="tablaPC">
+                    <tbody>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                PASIVO CIRCULANTE
+                            </td>
+                            <td style="width: 30%; text-align: right; text-decoration: underline;">
+                                2023
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                ANTICIPOS DE CONDÓMINOS
+                            </td>
+                            <td style="width: 30%; text-align: right; ">
+                                716,940
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                PROVEEDORES
+                            </td>
+                            <td style="width: 30%; text-align: right; ">
+                                -782
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                ACREEDORES DIVERSOS
+                            </td>
+                            <td style="width: 30%; text-align: right; ">
+                                215,487
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                IMPUESTOS POR PAGAR
+                            </td>
+                            <td style="width: 30%; text-align: right;">
+                                20,097
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--****************************  FIN CONTENIDO PC  *****************-->
+
+
+
+        <table style="border-collapse: separate; border-spacing: 30px 0px; width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="width: 50%;">
+                        <table style="border-collapse: collapse; width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 80%; text-align: left;" class="titulo_boton">
+                                        <a>Total de Activo
+                                            Circulante:</a>
+                                    </td>
+                                    <td style="width: 20%; text-align: right;" class="titulo_boton">
+                                        <a class="boton_mostrar">1,034,152</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="centrar-boton">
+                            <a href="#contenidoAC">
+                                <button class="desplegar" onClick="muestra_ActCir('contenidoAC')">
+                                    ➤ Desplegar
+                                </button>
+                            </a>
+                        </div>
+                        <hr>
+                    </td>
+                    <td style="width: 50%;">
+                        <table style="border-collapse: collapse; width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 80%; text-align: left;" class="titulo_boton">
+                                        <a>Total de Pasivo
+                                            Circulante:</a>
+                                    </td>
+                                    <td style="width: 20%; text-align: right;" class="titulo_boton">
+                                        <a class="boton_mostrar">951,742</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="centrar-boton">
+                            <a href="#contenidoPC">
+                                <button class="desplegar" onClick="muestra_PasCir('contenidoPC')">
+                                    ➤ Desplegar
+                                </button>
+                            </a>
+                        </div>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+            </tbody>
+        </table>
+
+        <!--****************************  CONTENIDO ANC  *****************-->
+        <div id="contenidoANC">
+            <div class="contenidoANC-Dis">
+                <div class="contenido-back"></div>
+                <div id="cerrarANC" style="text-align: left; margin-bottom: 30px;" class="cerrar"><a
+                        href="javascript:cerrarANC()">CERRAR</a>
+                </div>
+                <br>
+                <table style="border-collapse: collapse; width: 100%; height: 200px;" class="tablaANC">
+                    <tbody>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                ACTIVO NO CIRCULANTE
+                            </td>
+                            <td style="width: 30%; text-align: right; text-decoration: underline;">
+                                2023
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 80%; text-align: left;">
+                                MOBILIARIO Y EQUIPO DE OFICINA
+                            </td>
+                            <td style="width: 20%; text-align: right; ">
+                                20,083
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                DEPRECIACION ACUM MOB Y EQ. DE OFNA
+                            </td>
+                            <td style="width: 30%; text-align: right; ">
+                                -9,697
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                MAQUINARIA Y EQUIPO
+                            </td>
+                            <td style="width: 20%; text-align: right; ">
+                                1,456,176
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                DEPRECIACION ACUM MAQ Y EQUIPO
+                            </td>
+                            <td style="width: 20%; text-align: right; ">
+                                -938,266
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                EQUIPO DE COMPUTO
+                            </td>
+                            <td style="width: 20%; text-align: right; ">
+                                27,804
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                DEPRECIACION ACUM EQUIPO DE COMPUTO
+                            </td>
+                            <td style="width: 20%; text-align: right; ">
+                                -27,374
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--****************************  FIN CONTENIDO ANC  *****************-->
+        <div id="contenidoTPasNC">
+            <div class="contenidoTPasNC-Dis">
+                <div class="contenido-back"></div>
+                <div id="cerrarTPasNC" style="text-align: left; margin-bottom: 30px;" class="cerrar"><a
+                        href="javascript:cerrarTPasNC()">CERRAR</a>
+                </div>
+                <br>
+                <table style="border-collapse: collapse; width: 100%;;" class="tablaP">
+                    <tbody>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                Pasivo No Circulante
+                            </td>
+                            <td style="width: 30%; text-align: right; text-decoration: underline;">
+                                2023
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=" width: 70%; text-align: left;">
+                                INGRESOS POR REALIZAR
+                            </td>
+                            <td style="  width: 30%; text-align: right; ">
+                                351,843
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!--****************************  FIN CONTENIDO PNC  *****************-->
+
+        <table style="border-collapse: separate; border-spacing: 30px 0px; width: 100%;;">
+            <tbody>
+                <tr>
+                    <td style="width: 50%;">
+                        <table style="border-collapse: collapse; width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 80%; text-align: left;" class="titulo_boton">
+                                        <a>Total
+                                            de Activo no Circulante:</a>
+                                    </td>
+                                    <td style="width: 20%; text-align: right;" class="titulo_boton">
+                                        <a class="boton_mostrar">528,725</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="centrar-boton">
+                            <a href="#contenidoANC">
+                                <button class="desplegar" onClick="muestra_ActCir('contenidoANC')">
+                                    ➤ Desplegar
+                                </button>
+                            </a>
+                        </div>
+
+                        <hr>
+                    </td>
+                    <td style="width: 50%;">
+                        <table style="border-collapse: collapse; width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 80%; text-align: left;" class="titulo_boton">
+                                        <a>Total de Pasivo No Circulante:</a>
+                                    </td>
+                                    <td style="width: 20%; text-align: right;" class="titulo_boton">
+                                        <a class="boton_mostrar">531,843</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="centrar-boton">
+                            <a href="#contenidoTPasNC">
+                                <button class="desplegar" onClick="muestra_TPasNC('contenidoTPasNC')">
+                                    ➤ Desplegar
+                                </button>
+                            </a>
+                        </div>
+
+                        <hr>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--****************************  OTROS ACTIVOS NO CIRCULANTES  *****************-->
+        <div id="contenidoOANC">
+            <div class="contenidoOANC-Dis">
+                <div class="contenido-back"></div>
+                <div id="cerrarOANC" style="text-align: left; margin-bottom: 30px;" class="cerrar"><a
+                        href="javascript:cerrarOANC()">CERRAR</a>
+                </div>
+                <br>
+                <table style="border-collapse: collapse; width: 100%; height: 50px;" class="tablaOANC">
+                    <tbody>
+                        <tr>
+                            <td style="width: 80%; text-align: left;">
+                                OTROS ACTIVOS NO CIRCULANTES
+                            </td>
+                            <td style="width: 20%; text-align: right; text-decoration: underline;">
+                                2023
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 80%; text-align: left;">
+                                DESCUENTOS POR PRONTO PAGO POR APLICAR
+                            </td>
+                            <td style="width: 20%; text-align: right; ">
+                                123,666
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--****************************  FIN OTROS ACTIVOS NO CIRCULANTES  *****************-->
+
+        <div class="contenidoTotalP">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <table style="border-collapse: collapse; width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 80%; text-align: left;" class="titulo_boton">
+                                            <a>Total de Otros Activos No Circulante: </a>
+                                        </td>
+                                        <td style="width: 20%; text-align: right;" class="titulo_boton">
+                                            <a class="boton_mostrar">123,666</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="centrar-boton">
+                                <a href="#contenidoOANC">
+                                    <button class="desplegar" onClick="muestra_ActCir('contenidoOANC')">
+                                        ➤ Desplegar
+                                    </button>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <table style="width: 100%; margin-bottom: 100px;">
+                                <tbody>
+                                    <tr>
+                                        <td class="titulo_boton" style="width: 50%; padding-left: 15px;">
+                                            <a>Total del Pasivo: </a>
+                                        </td>
+                                        <td class="titulo_boton" style="width: 50%; text-align: right;">
+                                            <a class="boton_mostrar">1,303,584</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            <table style="border-collapse: collapse; width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 80%; text-align: left;" class="titulo_boton">
+                                            <a>Patrimonio Generado:</a>
+                                        </td>
+                                        <td style="width: 20%; text-align: right;" class="titulo_boton">
+                                            <a class="boton_mostrar">362,412</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="centrar-boton">
+                                <a href="#contenidoPNC">
+                                    <button class="desplegar" onClick="muestra_ActCir('contenidoPNC')">
+                                        ➤ Desplegar
+                                    </button>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <hr>
+
+        <!--****************************  CONTENIDO P  *****************-->
+        <!--  -->
+
+        <!-- <table >
+                <tbody>
+                    <tr>
+                        <td style="width: 50%;">
+
+                        </td>
+                        <td style="width: 50%;">
+                            <table style="border-collapse: collapse; width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 80%; text-align: left;" class="titulo_boton">
+                                            <a>Pérdida:</a>
+                                        </td>
+                                        <td style="width: 20%; text-align: right;" class="titulo_boton">
+                                            <a class="boton_mostrar">-433,200</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="centrar-boton">
+                                <a href="#contenidoP">
+                                    <button class="learn-more" style='cursor: pointer;  line-height: 80px;'
+                                        onClick="muestra_ActCir('contenidoP')">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">Desplegar</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr> -->
+        <!--****************************  CONTENIDO PNC  *****************-->
+        <div id="contenidoPNC">
+            <div class="contenidoPNC-Dis">
+                <div class="contenido-back"></div>
+                <div id="cerrarPNC" style="text-align: left; margin-bottom: 30px;" class="cerrar"><a
+                        href="javascript:cerrarPNC()">CERRAR</a>
+                </div>
+                <br>
+                <table style="border-collapse: collapse; width: 100%; height: 50px;" class="tablaPNC">
+                    <tbody>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                Patrimonio Contribuido
+                            </td>
+                            <td style="width: 20%; text-align: right; text-decoration: underline;">
+                                2023
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                APORTACIONES DE CONDÓMINOS
+                            </td>
+                            <td style="width: 20%; text-align: right; ">
+                                1,093,910
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                RESULTADO DE EJERCICIOS ANTERIORES
+                            </td>
+                            <td style="width: 20%; text-align: right; ">
+                                -731,498
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- ***************************************************PATRIMONIO -->
+        <!-- PATRIMONIO -->
+        <div id="contenidoPG">
+            <div class="contenidoPG-Dis">
+                <div class="contenido-back"></div>
+                <div id="cerrarPG" style="text-align: left; margin-bottom: 30px;" class="cerrar"><a
+                        href="javascript:cerrarPG()">CERRAR</a>
+                </div>
+                <br>
+                <table style="border-collapse: collapse; width: 100%; height: 50px;" class="tablaPNC">
+                    <tbody>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                Total Patrimonio
+                            </td>
+                            <td style="width: 20%; text-align: right; ">
+                                382,958
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70%; text-align: left;">
+                                Superávit o Déficit
+                            </td>
+                            <td style="width: 20%; text-align: right; ">
+                                20,547
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- FIN PATRIMONIO -->
+        <table style="border-collapse: separate; border-spacing: 30px 0px; width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="width: 50%;">
+                    </td>
+                    <td style="width: 50%;">
+                        <table style="border-collapse: collapse; width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 80%; text-align: left;" class="titulo_boton">
+                                        <a>Superavit:</a>
+                                    </td>
+                                    <td style="width: 20%; text-align: right;" class="titulo_boton">
+                                        <a class="boton_mostrar">382,958</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="centrar-boton">
+                            <a href="#contenidoPG">
+                                <button class="desplegar" onClick="muestra_PG('contenidoPG')">
+                                    ➤ Desplegar
+                                </button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <!-- ***************************************************FIN PATRIMONIO -->
+        <table style="border-collapse: separate; border-spacing: 30px 0px; width: 100%; height: auto;">
+            <tbody>
+                <tr>
+                    <td style="width: 50%;">
+                        <table style="border-collapse: collapse; width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 80%; text-align: left;" class="titulo_boton">
+                                        <strong style="font-size: 2.4rem; text-decoration: underline;">
+                                            Total Activo:
+                                        </strong>
+                                    </td>
+                                    <td style="width: 20%; text-align: right;" class="titulo_boton">
+                                        <strong style="font-size: 2.4rem;">
+                                            1,686,543
+                                        </strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style="width: 50%;">
+                        <table style="border-collapse: collapse; width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 80%; text-align: left;" class="titulo_boton">
+                                        <strong style="font-size: 2.4rem; text-decoration: underline;">
+                                            Total del Pasivo y Patrimonio:
+                                        </strong>
+                                    </td>
+                                    <td style="width: 20%; text-align: right;" class="titulo_boton">
+                                        <strong style="font-size: 2.4rem;">
+                                            1,686,543
+                                        </strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+</body>
+
+</html>
+<!-- <footer>
+    <button class="button-82-pushable" role="button">
+        <span class="button-82-shadow"></span>
+        <span class="button-82-edge"></span>
+        <span class="button-82-front text"><a href="./inicio.html" style="text-decoration: none; color: white;">Volver
+                ⮌</a>
+        </span>
+    </button>
+</footer> -->

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="flujo.js" type="text/javascript"></script>
+    <link href="flujo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Flujo de Efectivo</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="inicio.html"><img src="./El_Encanto_Logo.png" style="width: 150px;"></a>
+        <div class="parrafo">
+            <h3>
+                Estado de Flujo de Efectivo
+            </h3>
+            <h4>
+                Del 1 de Enero al 31 de Diciembre 2023
+            </h4>
+        </div>
+    </div>
+
+    <body>
+        <div class="contenidof">
+            <div class="contenido">
+                <!-- █▇▅▄▃▂▁ ▁▂▃▄▅▇██▇▅▄▃▂▁ ▁▂▃▄▅▇██▇▅▄▃▂▁ ACTIVIDADES DE OPERACIÓN ▁▂▃▄▅▇██▇▅▄▃▂▁ ▁▂▃▄▅▇██▇▅▄▃▂▁ ▁▂▃▄▅▇█-->
+                <table class="contenidoAO" style="border-collapse: collapse; width: 100%; height: 100px;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 50%;">
+                                ACTIVIDADES DE OPERACIÓN
+                            </td>
+                            <td style="width: 50%;">
+                                PERIODO ACTUAL
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <!-- ◝───────────────────────────────────────────⊰·ORIGEN.-1·⊱─────────────────────────────────────────────────◜ -->
+
+                <table class="tablaO" style="border-collapse: collapse; width: 100%; height: 70px;">
+                    <tbody>
+                        <td style=" width: 50%; height: 100px; color: #434655; text-align: center; ">
+                            ORIGEN
+                        </td>
+                        <td style="width: 50%; height: 60px; color: #434655; text-align: center;">
+                            3,662,318
+                        </td>
+                    </tbody>
+                </table>
+                <div class="centrar-boton">
+                    <a href="#contenidoO">
+                        <button class="desplegar" onClick="muestra_O('contenidoO')">
+                            ➤ Desplegar
+                        </button>
+                    </a>
+                </div>
+                <div id="contenidoO">
+                    <div class="contenidoO-Dis">
+                        <div class="contenido-back"></div>
+                        <div id="cerrarO" style="text-align: left; margin-bottom: 30px;" class="cerrar"><button
+                                onclick="javascript:cerrarO()"><a href="#contenidoO">CERRAR</a></button>
+                        </div>
+                        <br>
+                        <table class="tablaO2" style="border-collapse: collapse; width: 100%; height: 100px;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 70%; height: 60px;  text-align: left;">
+                                        Ingresos por cuotas de mantenimiento
+                                    </td>
+                                    <td style="width: 30%; height: 60px;  text-align: right;">
+                                        3,880,096
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 60px;  text-align: left;">
+                                        Descuentos por cuotas de mantenimiento
+                                    </td>
+                                    <td style="width: 30%; height: 60px;  text-align: right;">
+                                        -268,940
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 60px;  text-align: left;">
+                                        Penalización
+                                    </td>
+                                    <td style="width: 30%; height: 60px;  text-align: right;">
+                                        7,296
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 60px;  text-align: left;">
+                                        Intereses moratorios
+                                    </td>
+                                    <td style="width: 30%; height: 60px;  text-align: right;">
+                                        8,648
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 60px;  text-align: left;">
+                                        Otros ingresos
+                                    </td>
+                                    <td style="width: 30%; height: 60px;  text-align: right;">
+                                        19,529
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 60px;  text-align: left;">
+                                        Intereses por inversiones
+                                    </td>
+                                    <td style="width: 30%; height: 60px;  text-align: right;">
+                                        15,689
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 60px;  text-align: left;">
+                                        Couta extraordinaria 2021
+                                    </td>
+                                    <td style="width: 30%; height: 60px;  text-align: right;">
+                                        0
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- ◝───────────────────────────────────────────⊰·APLICACIÓN.-1·⊱─────────────────────────────────────────────────◜ -->
+                <table class="tablaA" style="border-collapse: collapse; width: 100%; height: 70px;">
+                    <tbody>
+                        <td style=" width: 50%; height: 100px;">
+                            APLICACIÓN
+                        </td>
+                        <td style=" width: 50%; height: 100px;">
+                            3,641,771
+                        </td>
+                    </tbody>
+                </table>
+
+                <div class="centrar-boton">
+                    <a href="#contenidoA">
+                        <button class="desplegar" onClick="muestra_A('contenidoA')">
+                            ➤ Desplegar
+                        </button>
+                    </a>
+                </div>
+
+                <div id="contenidoA">
+                    <div class="contenidoA-Dis">
+                        <div class="contenido-back"></div>
+                        <div id="cerrarA" style="text-align: left; margin-bottom: 30px;" class="cerrar"><button
+                                onclick="javascript:cerrarA()"><a href="#contenidoO">CERRAR</a></button>
+                        </div>
+                        <table class="tablaA2" style="border-collapse: collapse; width: 100%; height: 100px;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 50%; height: 60px;  text-align: left;">
+                                        Gastos de administración
+                                    </td>
+                                    <td style="width: 50%; height: 60px;  text-align: right;">
+                                        492,997
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; height: 60px;  text-align: left;">
+                                        Gastos de mantenimiento
+                                    </td>
+                                    <td style="width: 50%; height: 60px;  text-align: right;">
+                                        989,236
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; height: 60px;  text-align: left;">
+                                        Mantenimiento de edificio
+                                    </td>
+                                    <td style="width: 50%; height: 60px;  text-align: right;">
+                                        956,046
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; height: 60px;  text-align: left;">
+                                        Mantenimento de albercas
+                                    </td>
+                                    <td style="width: 50%; height: 60px;  text-align: right;">
+                                        76,039
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; height: 60px;  text-align: left;">
+                                        Fuentes
+                                    </td>
+                                    <td style="width: 50%; height: 60px;  text-align: right;">
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; height: 60px;  text-align: left;">
+                                        Jardinería
+                                    </td>
+                                    <td style="width: 50%; height: 60px;  text-align: right;">
+                                        329,775
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%; height: 60px;  text-align: left;">
+                                        Seguridad
+                                    </td>
+                                    <td style="width: 50%; height: 60px;  text-align: right;">
+                                        797,678
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="contenidoO2-ancla">
+
+                </div>
+                <table class="tablaFNAO" style="border-collapse: collapse; width: 100%; height: 100px;">
+                    <tbody>
+                        <tr>
+                            <td style=" width: 50%; height: 100px; text-align: center;">
+                                FLUJO NETO DE LAS ACTIVIDADES DE OPERACIÓN
+                            </td>
+                            <td style=" width: 50%; height: 100px; text-align: right;">
+                                20,547
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <!-- █▇▅▄▃▂▁ ▁▂▃▄▅▇██▇▅▄▃▂▁ ▁▂▃▄▅▇██▇▅▄▃▂▁ ACTIVIDADES DE INVERSIÓN ▁▂▃▄▅▇██▇▅▄▃▂▁ ▁▂▃▄▅▇██▇▅▄▃▂▁ ▁▂▃▄▅▇█-->
+                <table class="tablaAI" style="border-collapse: collapse; width: 100%; height: 100px;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 50%; height: 60px;">
+                                ACTIVIDADES DE INVERSIÓN
+                            </td>
+                            <td style="width: 50%; height: 60px;">
+                                PERIODO ACTUAL
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- ◝───────────────────────────────────────────⊰·ORIGEN.-2·⊱─────────────────────────────────────────────────◜ -->
+                <table class="tablaOr" style="border-collapse: collapse; width: 100%; height: 70px;">
+                    <tbody>
+                        <td style=" width: 50%; height: 60px;">
+                            ORIGEN
+                        </td>
+                        <td style=" width: 50%; height: 60px;">
+                            0
+                        </td>
+                    </tbody>
+                </table>
+
+                <div class="centrar-boton">
+                    <a href="#contenidoO2">
+                        <button class="desplegar" onClick="muestra_O2('contenidoO2')">
+                            ➤ Desplegar
+                        </button>
+                    </a>
+                </div>
+
+                <div id="contenidoO2">
+                    <div class="contenidoO2-Dis">
+                        <div class="contenido-back"></div>
+                        <div id="cerrarO2" style="text-align: left; margin-bottom: 30px;" class="cerrar"><button
+                                onclick="javascript:cerrarO2()"><a href="#contenidoO2-ancla">CERRAR</a></button>
+                        </div>
+                        <table class="tablaOr2" style="border-collapse: collapse; width: 100%; height: 100px;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 70%; height: 60px;  text-align: left;">
+                                        Disminucion de Anticipos a proveedores
+                                    </td>
+                                    <td style="width: 30%; height: 60px;  text-align: right;">
+                                        0
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- ◝───────────────────────────────────────────⊰·APLICACIÓN.-2·⊱─────────────────────────────────────────────────◜ -->
+                <table class="tablaAp" style="border-collapse: collapse; width: 100%; height: 70px;">
+                    <tbody>
+                        <td style=" width: 50%; height: 60px;">
+                            APLICACIÓN
+                        </td>
+                        <td style=" width: 50%; height: 60px;">
+                            38,829
+                        </td>
+                    </tbody>
+                </table>
+
+                <div class="centrar-boton">
+                    <a href="#contenidoA2">
+                        <button class="desplegar" onClick="muestra_A2('contenidoA2')">
+                            ➤ Desplegar
+                        </button>
+                    </a>
+                </div>
+
+                <div id="contenidoA2">
+                    <div class="contenidoA2-Dis">
+                        <div class="contenido-back"></div>
+                        <div id="cerrarA2" style="text-align: left; margin-bottom: 30px;" class="cerrar"><button
+                                onclick="javascript:cerrarA2()"><a href="#contenidoO2-ancla">CERRAR</a></button>
+                        </div>
+                        <table class="tablaAp2" style="border-collapse: collapse; width: 100%; height: 100px;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Incremento de impuestos por acreeditar
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Incremento de cuentas por cobrar a Deudores diversos
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Anticipos a proveedores
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Bienes muebles
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Incremento de cuentas por cobrar a Condóminos
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        21,262
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Bienes muebles e intangibles
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Incremento de Descuentos por aplicar a condóminos
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        17,567
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="contenidoO3-ancla"></div>
+                <table class="tablaFNEAI" style="border-collapse: collapse; width: 100%; height: 100px;">
+                    <tbody>
+                        <tr>
+                            <td style=" width: 50%; height: 60px;">
+                                FLUJO NETO DE EFECTIVO DE LAS ACTIVIDADES DE INVERSIÓN
+                            </td>
+                            <td style=" width: 50%; height: 60px;">
+                                -38,829
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- █▇▅▄▃▂▁ ▁▂▃▄▅▇██▇▅▄▃▂▁ ▁▂▃▄▅▇██▇▅▄▃▂▁ ACTIVIDADES DE FINANCIAMIENTO▁▂▃▄▅▇██▇▅▄▃▂▁ ▁▂▃▄▅▇██▇▅▄▃▂▁ ▁▂▃▄▅▇█-->
+                <table class="tablaAF" style="border-collapse: collapse; width: 100%; height: 100px;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 50%; height: 60px;">
+                                ACTIVIDADES DE FINANCIAMIENTO
+                            </td>
+                            <td style="width: 50%; height: 60px;">
+                                PERIODO ACTUAL
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- ◝───────────────────────────────────────────⊰·ORIGEN.-3·⊱─────────────────────────────────────────────────◜ -->
+                <table class="tablaO3" style="border-collapse: collapse; width: 100%; height: 70px;">
+                    <tbody>
+                        <td style=" width: 50%; height: 60px;">
+                            ORIGEN
+                        </td>
+                        <td style=" width: 50%; height: 60px;">
+                            179,034
+                        </td>
+                    </tbody>
+                </table>
+
+                <div class="centrar-boton">
+                    <a href="#contenidoO3">
+                        <button class="desplegar" onClick="muestra_O3('contenidoO3')">
+                            ➤ Desplegar
+                        </button>
+                    </a>
+                </div>
+
+                <div id="contenidoO3">
+                    <div class="contenidoO3-Dis">
+                        <div class="contenido-back"></div>
+                        <div id="cerrarO3" style="text-align: left; margin-bottom: 30px;" class="cerrar"><button
+                                onclick="javascript:cerrarO3()"><a href="#contenidoO3-ancla">CERRAR</a></button>
+                        </div>
+                        <table class="tabla03p1" style="border-collapse: collapse; width: 100%; height: 100px;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Incremento a proveedores
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right; color: red;">
+                                        -571
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Depreciación
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        126,188
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Incremento de impuestos por pagar
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        8,666
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Incremento de acreedores diversos
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        23,488
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Incremento de ingresos por realizar
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        21,264
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Incremento de anticipos de condóminos
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        0
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- ◝───────────────────────────────────────────⊰·APLICACIÓN.-3·⊱─────────────────────────────────────────────────◜ -->
+                <table class="tablaA3" style="border-collapse: collapse; width: 100%; height: 70px;">
+                    <tbody>
+                        <td style=" width: 50%; height: 60px;">
+                            APLICACIÓN
+                        </td>
+                        <td style=" width: 50%; height: 60px;">
+                            25,379
+                        </td>
+                    </tbody>
+                </table>
+
+                <div class="centrar-boton">
+                    <a href="#contenidoA3">
+                        <button class="desplegar" onClick="muestra_A3('contenidoA3')">
+                            ➤ Desplegar
+                        </button>
+                    </a>
+                </div>
+
+                <div id="contenidoA3">
+                    <div class="contenidoA3-Dis">
+                        <div class="contenido-back"></div>
+                        <div id="cerrarA3" style="text-align: left; margin-bottom: 30px;" class="cerrar"><button
+                                onclick="javascript:cerrarA3()"><a href="#contenidoO3-ancla">CERRAR</a></button>
+                        </div>
+                        <table class="tablaA3p1" style="border-collapse: collapse; width: 100%; height: 100px;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Disminucion de impuuestos por pagar
+                                    </td>
+                                    <td style="width: 50%; height: 80px;  text-align: right;">
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 70%; height: 80px;  text-align: left;">
+                                        Disminución de anticipos de condóminos
+                                    </td>
+                                    <td style="width: 50%; height: 60px;  text-align: right;">
+                                        25,379
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <table class="tablaFNAF" style="border-collapse: collapse; width: 100%; height: 100px;">
+                    <tbody>
+                        <tr>
+                            <td style=" width: 70%; height: 60px;">
+                                FLUJO NETO DE EFECTIVO DE LAS ACTIVIDADES DE FINANCIAMIENTO
+                            </td>
+                            <td style=" width: 30%; height: 60px;">
+                                153,655
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="tablaFinal" style="border-collapse: collapse; width: 100%; height: 183px;">
+                    <tbody>
+                        <tr style="height: 60px;">
+                            <td style=" width: 70%; height: 130px; ">
+                                INCREMENTO/DISMINUCIÓN NETA EN EL EFECTIVO Y EQUIVALENTES AL EFECTIVO
+                            </td>
+                            <td style=" width: 30%; height: 130px;">
+                                135,373
+                            </td>
+                        </tr>
+                        <tr style="height: 66px;">
+                            <td style=" width: 70%; height: 130px; ">
+                                EFECTIVO Y EQUIVALENTES AL EFECTIVO AL INICIO DEL PERIODO
+                            </td>
+                            <td style=" width: 30%; height: 130px;">
+                                523,019
+                            </td>
+                        </tr>
+                        <tr style="height: 62px;">
+                            <td style=" width: 70%; height:130px;">
+                                EFECTIVO Y EQUIVALENTES AL EFECTIVO AL FINAL DEL PERIODO
+                            </td>
+                            <td style=" width: 30%; height: 130px;">
+                                658,392
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <br>
+        </div>
+
+    </body>
+
+</html>
