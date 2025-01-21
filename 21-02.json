@@ -1,0 +1,61 @@
+db.Materia.insert({"cveMat": "100", "nomMat": "Ingles"})
+
+db.createCollection("Grupo")
+db.createCollection("Materia")
+
+db.Grupo.drop()
+
+db.Materia.find().pretty()
+
+db.Materia.insert({"cveMat": "2000", "nomMat": "BD"})
+
+use BD_GrupoAlumno
+
+db.Grupo.insert({
+    "cveGur": "GSI0511",
+    "nomGru": "Aguilas",
+},{
+    "cveGru": "GSI0522",
+    "nomGru": "Chivas"
+},
+{
+    "cveGru": "GSI05133",
+    "cveGru": "Pumas"
+});
+
+db.Alumno.insert({
+    "cveAlu": "1000",
+    "nomAlu": "Francisco",
+    "edaAlu": 20,
+    "cveGru": "GSI0511"
+},{
+    "cveAlu": "2000",
+    "nomAlu": "Miguel",
+    "edaAlu": 15,
+    "cveGru": "GSI0511"
+},
+{
+    "cveAlu": "3000",
+    "nomAlu": "Maricela",
+    "edaAlu": 19,
+    "cveGru": "GSI0511"
+},
+{
+    "cveAlu": "4000",
+    "nomAlu": "Carmen",
+    "edaAlu": 18,
+    "cveGru": "GSI0522"
+},
+{
+    "cveAlu": "5000",
+    "nomAlu": "Alma",
+    "edaAlu": 18,
+    "cveGru": "GSI0522"
+},
+{
+    "cveAlu": "6000",
+    "nomAlu": "Guillermo",
+    "edaAlu": 24,
+    "cveGru": "GSI0522"
+}
+);

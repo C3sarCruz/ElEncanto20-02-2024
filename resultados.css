@@ -115,10 +115,18 @@ a:visited {
 }
 
 #tabla-grafica{
-    font-size: 40px;
-    font-family: sans-serif;
     color: #434655;
     letter-spacing: 1px;
+}
+
+.tabla-grafica-1{
+    border-collapse: separate;
+    border-spacing: 5px 10px;
+    width: 100%;
+    height: 50px;
+}
+.tabla-grafica-1 tbody td p{
+    font-size: 2rem;
 }
 
 #ga-tabla tbody tr td{
@@ -277,98 +285,9 @@ a:visited {
     font-weight: bolder;
 }
 
-.ActivosPasivos {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 50px;
-    font-weight: 900;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: separate;
-    border-spacing: 50px;
-    color: #5F6EBF;
-
-}
-
-.titulo_boton {
-    color: #434655;
-    margin-top: 10px;
-    text-align: center;
-    width: 600px;
-    margin-left: 20px;
-    font-family: helvetica;
-    font-size: 16px;
-    font-weight: bold;
-
-}
-
-.boton_mostrar {
-    border: none;
-    color: #434655;
-    text-align: center;
-    font-size: 25px;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    line-height: 40px;
-    margin-bottom: 80px;
-}
-
 /*******************************************************************************************FIN BOTON REGRESAR*/
 
 /*RESULTADOS*/
-.headerR {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    text-align: justify;
-    font-size: 25px;
-    width: 100%;
-    height: 100px;
-    font-weight: bold;
-    text-align: center;
-    background: #9B737F;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.offsetR {
-    margin-top: 0px;
-    padding-top: 70px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.columnAR {
-    position: absolute;
-    top: 190px;
-    left: 290px;
-    width: 200px;
-    margin-top: 10px;
-    background-color: #9B7B73;
-    color: #FBF5E9;
-    font-style: normal;
-    font-variant: small-caps;
-    text-transform: capitalize;
-    border-radius: 2px;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    padding-top: 10px;
-}
-
-.columnPR {
-    position: absolute;
-    top: 190px;
-    right: 290px;
-    width: 200px;
-    margin-top: 10px;
-    background-color: #9B7B73;
-    color: #FBF5E9;
-    
-    font-style: normal;
-    font-variant: small-caps;
-    text-transform: capitalize;
-    border-radius: 2px;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    padding-top: 10px;
-}
 
 .contenidoR {
     text-decoration: none;
@@ -612,7 +531,6 @@ a:visited {
     color: #4E4F52;
     cursor: pointer;
     display: inline-block;
-    font-family: Circular, Helvetica, sans-serif;
     font-size: 1.125rem;
     font-weight: 700;
     letter-spacing: -.01em;
@@ -665,58 +583,67 @@ a:visited {
 /*FIN DE BOTON MOSTRAR GRAFICA*/
 
 
-
-#contenidoGrafica tbody td {
-    background-color: #ffffff;
-}
-
-
 .cuadrado-1 {
     width: 20px;
     height: 20px;
-    border: 1px solid #555;
-    background: #4649eb;
+    background: #07a4ff;
     margin-right: 10px;
 }
 
 .cuadrado-2 {
     width: 20px;
     height: 20px;
-    border: 1px solid #555;
     background: #f59416;
     margin-right: 10px;
 }
 .cuadrado-3 {
     width: 20px;
     height: 20px;
-    border: 1px solid #555;
-    background: #949494;
+    background: #b1b1b1;
     margin-right: 10px;
 }
 .cuadrado-4 {
     width: 20px;
     height: 20px;
-    border: 1px solid #555;
-    background: #fff020;
+    background: #ffcb20;
     margin-right: 10px;
 }
+
 .cuadrado-5 {
     width: 20px;
     height: 20px;
-    border: 1px solid #555;
-    background: #FF6699;
-    margin-right: 10px;
+    background: #0033ff;
 }
-
-
 
 .cuadrado-6 {
     width: 20px;
     height: 20px;
-    border: 1px solid #555;
-    background: #29a52f;
+    background: #2f7a11;
 }
 
+.cuadrado-7 {
+    width: 20px;
+    height: 20px;
+    background: #130781;
+}
+
+.cuadrado-8 {
+    width: 20px;
+    height: 20px;
+    background: #44280e;
+}
+
+.cuadrado-9 {
+    width: 20px;
+    height: 20px;
+    background: #464646;
+}
+
+.cuadrado-10 {
+    width: 20px;
+    height: 20px;
+    background: #968210;
+}
 
 #contenidoGP{
     display: none;
@@ -763,7 +690,6 @@ a:visited {
     border-bottom-right-radius: 15px;
     height: auto;
     padding: 25px;
-    background-color: white;
     display: flex;
     justify-content: center;
 }
@@ -787,7 +713,6 @@ button {
     background: transparent;
     padding: 0;
     font-size: inherit;
-    font-family: inherit;
 }
 
 .tabla-header tbody td{
@@ -891,4 +816,35 @@ button {
     right: 0;
     margin: auto;
     z-index: -10;
+}
+
+.pantalla img {
+    height: 5vh;
+    width: auto;
+
+}
+
+.pantalla button {
+    display: flex;
+    position: fixed;
+    height: auto;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    z-index: 10;
+    cursor: pointer;
+    margin: 20px;
+    background-color:#BA94A0;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    color: #fff;
+    font-weight: bolder;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+#graficaTotal img{
+    height: 30pc;
+    width: auto;
 }

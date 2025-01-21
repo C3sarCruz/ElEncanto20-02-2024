@@ -557,21 +557,6 @@ a {
     margin: auto;
 }
 
-.btn__text {
-    color:rgb(68, 68, 68);
-    top: 50%;
-    transform: translateY(-50%);
-    white-space: nowrap;
-    z-index: 2;
-    padding: 24px 8px;
-    transition: 0.3s linear;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    letter-spacing: 2.5px;
-    margin-left: 20px;
-}
-
 .btn:hover .btn__circle {
     transform: scale(0);
 }
@@ -579,14 +564,17 @@ a {
 .btn:hover .btn__white-circle {
     transform: translate(-50%, -50%) scale(1);
 }
-
-.btn:hover .btn__text {
-    transform: translate(40px, -50%);
-}
 .content{
     position: absolute;
     margin-top: 100px;
-    margin-left: 45%;
+    margin-left: 49%;
+}
+
+button{
+    border-radius: 100%;
+    border: 1px solid;
+    color: #9E0800;
+    cursor: pointer;
 }
 
 

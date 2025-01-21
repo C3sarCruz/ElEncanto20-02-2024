@@ -775,3 +775,29 @@ button {
     margin: auto;
     z-index: -10;
 }
+
+.pantalla img {
+    height: 5vh;
+    width: auto;
+
+}
+
+.pantalla button {
+    display: flex;
+    position: fixed;
+    height: auto;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    z-index: 10;
+    cursor: pointer;
+    margin: 20px;
+    background-color: #abd1bd;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    color: #fff;
+    font-weight: bolder;
+    padding: 2px;
+    border-radius: 6px;
+}
