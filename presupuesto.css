@@ -412,6 +412,31 @@ a:visited {
     margin: auto;
     padding: 1pc;
 }
+
+#contenidoSP {
+    display: none;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+}
+.contenidoSP {
+    width: 96%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 1pc;
+}
 .contenido-back {
     background: rgba(0, 0, 0, 0.535);
     display: flex;
