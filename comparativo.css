@@ -798,32 +798,6 @@ a:visited {
     padding: 1pc;
 }
 
-#contenido-con {
-    display: none;
-    text-decoration: none;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    z-index: 100;
-}
-
-.contenidoCon-Dis {
-    width: 96%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    padding: 1pc;
-}
-
 /******************************************************************************/
 /*BOTON  DESPLEGAR*/
 

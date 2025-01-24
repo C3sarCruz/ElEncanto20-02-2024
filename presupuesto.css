@@ -463,6 +463,34 @@ a:visited {
     margin: auto;
     padding: 1pc;
 }
+
+#contenido-con {
+    display: none;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+.contenidoCon-Dis {
+    width: 96%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 1pc;
+}
+
+
 .contenido-back {
     background: rgba(0, 0, 0, 0.535);
     display: flex;
@@ -477,7 +505,17 @@ a:visited {
     margin: auto;
 }
 /*FIN DE LOS CONTENIDOS DE TABLA*/
-
+#tabla-con tbody td {
+    width: auto;
+    height: 10vh;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #434655;
+    background-color: rgb(255, 252, 240);
+    padding: 20px;
+}
 .header {
     display: block;
     position: relative;

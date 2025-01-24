@@ -220,16 +220,5 @@ function cerrarBM() {
 }
 //---------------------------------------------FIN CASUB CONTENIDOS-----------------------------------------
 
-function muestra_con(id) {
-        if (document.getElementById) {
-            var el = document.getElementById(id);
-        el.style.display = (el.style.display == 'none') ? 'block' : 'none';
-        }
-    }
-        window.onload = function () {
-            muestra_con('contenido-con');
-}
-function cerrar_con() {
-    document.getElementById("contenido-con").style.display = "none";
-}
+
 /***********************************************FIN COMPARATIVO*********************************************/
