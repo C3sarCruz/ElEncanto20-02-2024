@@ -174,3 +174,18 @@ window.onload = function () {
 function cerrarSP() {
     document.getElementById("contenidoSP").style.display = "none";
 }
+
+
+function muestraCS(id) {
+    if (document.getElementById) {
+        var el = document.getElementById(id);
+        el.style.display = el.style.display == "none" ? "block" : "none";
+    }
+}
+window.onload = function () {
+    muestraCS("contenidoCS");
+};
+
+function cerrarCS() {
+    document.getElementById("contenidoCS").style.display = "none";
+}
