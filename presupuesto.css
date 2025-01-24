@@ -606,6 +606,10 @@ a:visited {
 
 */
 
+#CICM:hover{
+    color: #fff
+}
+
 @import url("https://fonts.googleapis.com/css?family=Mukta:700");
 
 * {
