@@ -140,6 +140,20 @@ function cerrarMA() {
     document.getElementById("contenidoMA").style.display = "none";
 }
 
+function muestra_GF(id) {
+        if (document.getElementById) {
+            var el = document.getElementById(id);
+        el.style.display = (el.style.display == 'none') ? 'block' : 'none';
+        }
+    }
+        window.onload = function () {
+            muestra_GF('contenidoGF');
+}
+
+function cerrarGF() {
+    document.getElementById("contenidoGF").style.display = "none";
+}
+
 
 function muestra_GJ(id) {
         if (document.getElementById) {

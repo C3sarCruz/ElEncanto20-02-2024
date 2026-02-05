@@ -8,8 +8,14 @@ body {
     color: #999;
     background: linear-gradient(rgba(255, 255, 255, 0.302), rgba(255, 255, 255, 0.905)), url(./background.jpg) no-repeat center/cover;
     background-attachment: fixed;
+    align-items: center;
 }
 
+.centrartxt{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
 
 .hrh {
     clear: both;
@@ -64,7 +70,7 @@ body {
     color: #212121;
     cursor: pointer;
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: -.01em;
     height: 60px;
@@ -124,35 +130,63 @@ body {
 .cuadrado-1 {
     width: 20px;
     height: 20px;
-    background: #07a4ff;
+    background: #0d1983;
     margin-right: 10px;
 }
 
 .cuadrado-2 {
     width: 20px;
     height: 20px;
-    background: #f59416;
+    background: #4c0bfd;
     margin-right: 10px;
 }
-
 .cuadrado-3 {
     width: 20px;
     height: 20px;
-    background: #b1b1b1;
+    background: #5a7ec0;
     margin-right: 10px;
 }
-
 .cuadrado-4 {
     width: 20px;
     height: 20px;
-    background: #ffcb20;
+    background: #71c3d8;
     margin-right: 10px;
+}
+
+.cuadrado-5 {
+    width: 20px;
+    height: 20px;
+    background: #71c3d8;
 }
 
 .cuadrado-6 {
     width: 20px;
     height: 20px;
-    background: #0033ff;
+    background: #0c083f;
+}
+
+.cuadrado-7 {
+    width: 20px;
+    height: 20px;
+    background: #4c0bfd;
+}
+
+.cuadrado-8 {
+    width: 20px;
+    height: 20px;
+    background: #4282d6;
+}
+
+.cuadrado-9 {
+    width: 20px;
+    height: 20px;
+    background: #55f9ff;
+}
+
+.cuadrado-10 {
+    width: 20px;
+    height: 20px;
+    background: #f3f3f3;
 }
 
 
@@ -542,3 +576,13 @@ button:hover .button-text {
     color: #fff;
     font-weight: bolder;
 }
+
+
+
+/* 
+
+canvas {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+} */

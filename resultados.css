@@ -157,6 +157,16 @@ a:visited {
     color: #434655;
     background-color: #F9EBEF;
 }
+
+#gf-tabla tbody tr>td {
+    height: 10vh;
+    font-size: 2.5rem;
+    padding: 30px;
+    color: #434655;
+    background-color: #F9EBEF;
+}
+
+
 #gj-tabla tbody tr>td {
     height: 10vh;
     font-size: 2.5rem;
@@ -461,6 +471,35 @@ a:visited {
     padding: 1pc;
 }
 
+
+#contenidoGF {
+    display: none;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+.contenidoGF-Dis {
+    width: 96%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 1pc;
+}
+
+    
+
 #contenidoGJ {
     display: none;
     text-decoration: none;
@@ -586,63 +625,63 @@ a:visited {
 .cuadrado-1 {
     width: 20px;
     height: 20px;
-    background: #b10058;
+    background: #0d1983;
     margin-right: 10px;
 }
 
 .cuadrado-2 {
     width: 20px;
     height: 20px;
-    background: #c25b2b;
+    background: #4c0bfd;
     margin-right: 10px;
 }
 .cuadrado-3 {
     width: 20px;
     height: 20px;
-    background: #b1b1b1;
+    background: #5a7ec0;
     margin-right: 10px;
 }
 .cuadrado-4 {
     width: 20px;
     height: 20px;
-    background: #e7961c;
+    background: #71c3d8;
     margin-right: 10px;
 }
 
 .cuadrado-5 {
     width: 20px;
     height: 20px;
-    background: #0033ff;
+    background: #71c3d8;
 }
 
 .cuadrado-6 {
     width: 20px;
     height: 20px;
-    background: #2f7a11;
+    background: #0c083f;
 }
 
 .cuadrado-7 {
     width: 20px;
     height: 20px;
-    background: #3d50a7;
+    background: #4c0bfd;
 }
 
 .cuadrado-8 {
     width: 20px;
     height: 20px;
-    background: #aa281f;
+    background: #4282d6;
 }
 
 .cuadrado-9 {
     width: 20px;
     height: 20px;
-    background: #464646;
+    background: #55f9ff;
 }
 
 .cuadrado-10 {
     width: 20px;
     height: 20px;
-    background: #ffd34d;
+    background: #f3f3f3;
 }
 
 #contenidoGP{
@@ -795,6 +834,12 @@ button {
     padding: 30px;
     font-size: 2rem;
 }
+
+.tablaGF tbody td strong {
+    padding: 30px;
+    font-size: 2rem;
+}
+
 .tablaGJ tbody td strong {
     padding: 30px;
     font-size: 2rem;

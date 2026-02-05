@@ -90,3 +90,47 @@ function cerrarTD() {
 function cerrarGV() {
     document.getElementById("contenidoGV").style.display = "none";
 }
+
+/* 
+    
+const canvas = document.getElementById("pieChart");
+const ctx = canvas.getContext("2d");
+
+// Datos
+const data = [10, 20, 25, 25, 30, 20, 25, 25];
+const colors = ["#ff6384", "#36a2eb", "#ffcd56", "#4bc0c0","#ff6384", "#36a2eb", "#ffcd56", "#4bc0c0"];
+
+const total = data.reduce((a, b) => a + b, 0);
+
+let currentAngle = 0;
+let targetAngle = 0;
+let sliceIndex = 0;
+
+function drawSlice(angle) {
+    ctx.beginPath();
+    ctx.moveTo(200, 200);
+    ctx.arc(200, 200, 150, currentAngle, currentAngle + angle);
+    ctx.closePath();
+    ctx.fillStyle = colors[sliceIndex];
+    ctx.fill();
+}
+
+function animate() {
+    if (sliceIndex >= data.length) return;
+
+    const sliceAngle = (data[sliceIndex] / total) * Math.PI * 4;
+    const step = 1; // velocidad de animación
+
+    if (targetAngle < sliceAngle) {
+        targetAngle += step;
+        drawSlice(step);
+    } else {
+        currentAngle += sliceAngle;
+        sliceIndex++;
+        targetAngle = 0;
+    }
+
+    requestAnimationFrame(animate);
+}
+
+animate(); */
