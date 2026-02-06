@@ -190,6 +190,20 @@ function cerrarJ() {
 }
 
 
+function muestra_F(id) {
+        if (document.getElementById) {
+            var el = document.getElementById(id);
+        el.style.display = (el.style.display == 'none') ? 'block' : 'none';
+        }
+    }
+        window.onload = function () {
+            muestra_F('contenidoF');
+}
+
+function cerrarF() {
+    document.getElementById("contenidoF").style.display = "none";
+}
+
 
 function muestra_S(id) {
         if (document.getElementById) {
@@ -218,6 +232,22 @@ function muestra_BM(id) {
 function cerrarBM() {
     document.getElementById("contenidoBM").style.display = "none";
 }
+
+
+function muestra_P25(id) {
+        if (document.getElementById) {
+            var el = document.getElementById(id);
+        el.style.display = (el.style.display == 'none') ? 'block' : 'none';
+        }
+    }
+        window.onload = function () {
+            muestra_P25('contenidoP25');
+}
+
+function cerrarP25() {
+    document.getElementById("contenidoP25").style.display = "none";
+}
+
 //---------------------------------------------FIN CASUB CONTENIDOS-----------------------------------------
 
 

@@ -155,7 +155,46 @@
 .button-82-pushable:focus:not(:focus-visible) {
     outline: none;
 }
+/* ===== MÓVIL ===== */
+@media (max-width: 576px) {
 
+    .box-wrap {
+        display: flex;
+        flex-direction: column;   /* Uno debajo de otro */
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;              /* Ocupa todo el ancho */
+        max-width: 320px;         /* Evita que se vea gigante */
+        min-height: auto;
+        padding: 15px;
+        border-radius: 12px;
+        display: flex;
+        flex-wrap: wrap;              /* Permite que bajen de fila */
+        justify-content: center;    
+    }
+
+    .box img {
+        align-content: center;
+        align-self: center;
+        width: 80px;              /* Tamaño ideal en móvil */
+        height: auto;
+    }
+
+    .box p {
+        margin: 8px 0;
+        font-size: 14px;
+    }
+
+    .btn-shine {
+        font-size: 15px;
+        display: inline-block;
+        text-align: center;
+    }
+}
 /*******************************************************************************************FIN BOTON REGRESAR*/
 
 .headerI {
@@ -175,11 +214,15 @@
 
 .contenidoI {
     text-decoration: none;
-    margin-top: 10vh;
+/*     margin-top: 10vh;
     margin-left: 15vw;
-    margin-right: 20vw;
+    margin-right: 20vw; */
     border-radius: 7px;
     letter-spacing: 1;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
 }
 
 .offsetI {
@@ -207,17 +250,20 @@
 
 
 .box-wrap {
-    display:block;
+/*     display:block;
     justify-content: center;
     justify-self: center;
     justify-items: center;
-    align-items: center;
+    align-items: center; */
+    display: flex;
+    flex-wrap: wrap;              /* Permite que bajen de fila */
+    justify-content: center;
 }
 
 .box {
-    width: 20vw;
+    width: 25%;
     height: auto;
-    max-height: 29vh;
+    max-height: auto;
     transition: .2s all;
     text-align: center;
     border-radius: 1px;
@@ -229,12 +275,13 @@
     font-size: 1.5rem;
 }
 .box p a img{
-    height: 15vh;
+    height: auto;
+    max-height: 150px;
     width: auto;
 }
 
 .box-wrap:hover .box {
-    filter: blur(6px);
+    filter: blur(2px);
     opacity: 1;
     transform: scale(.85);
     box-shadow: none;
@@ -284,7 +331,7 @@ body {
     color: #999;
     font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
     text-align: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.302), rgba(255, 255, 255, 0.905)), url(./background.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.302), rgba(255, 255, 255, 0.192)), url(./xd5.webp) no-repeat center/cover;
     background-attachment: fixed;
     /* img size is 50x50 */
     -webkit-animation: bg-scrolling-reverse .92s infinite;
@@ -328,8 +375,8 @@ body {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: #dfdfdf;
-    animation: animate 25s linear infinite;
+    background: #ffffff;
+    animation: animate 5s linear infinite;
     bottom: -150px;
 
 }
