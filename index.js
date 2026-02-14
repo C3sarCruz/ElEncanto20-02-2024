@@ -18,7 +18,7 @@ function cancelFullScreen() {
     }
 }
 
-const container = document.querySelector("#page-container");
+/* const container = document.querySelector("#page-container");
 
 // Limpia el head y lo reemplaza con el head nuevo
 function updateHead(newDoc) {
@@ -98,3 +98,4 @@ window.onload = () => {
         el.classList.add("active");
     });
 };
+ */
